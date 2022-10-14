@@ -1,0 +1,183 @@
+// variable define
+
+$gray_light: #e2e2e2;
+$gray_lighter: #fd735a;
+$main-color: #fa2456;
+$black: #252525;
+$body-font: 'Poppins', sans-serif;
+$cont-font: 'Lato', sans-serif;
+
+$body-color: #111;
+$font-size:16px;
+$transition: all 0.5s;
+
+@mixin linear-gradient {
+	background: linear-gradient(to right, $main-color, $gray_lighter);
+}
+
+@mixin text-gradient {
+	background: linear-gradient(to right, $main-color, $gray_lighter);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin box-shadow {
+	box-shadow: 0 -12px 46px 12px #b60e0e0d;
+}
+
+@mixin box-shadow2 {
+	box-shadow: 0 20px 46px 12px #b60e0e0d;
+}
+
+@mixin transition {
+    transition: $transition;
+}
+
+// common scss start
+
+body, html {
+	font-family: $body-font;
+	font-size: $font-size;
+	line-height: 23px;
+	color: $body-color;
+	width:100%;
+	padding: 0 !important;
+	background:#ffffff;
+    @include transition;
+}
+a {
+	color: $body-color;
+	font-family: $cont-font;
+	text-decoration: none;
+    outline: none;
+    @include transition;
+}
+a:hover, a:focus {
+	color: $main-color;
+}
+i:before{
+	margin-left:0 !important;
+}
+h1, h2, h3, h4, h5, h6 , .h1, .h2, .h3, .h4, .h5, .h6{
+	font-family: $cont-font;
+	line-height: 1.1;
+	font-weight:400;
+	color: $body-color;
+	margin:0;
+	padding:0;
+}
+p , a{
+	margin: 0;
+	padding: 0;
+	color: #797979;
+}
+p{
+	font-family: $cont-font;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	@include transition;
+}
+img{
+	@include transition;
+}
+.no-scroll{
+    overflow: hidden;
+}
+// common scss end
+
+
+// back to top  scss start
+
+#back-to-top{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	@include linear-gradient;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	border-radius: 35px;
+	position: fixed;
+    top: -100px;
+	right: 90px;
+	z-index: 1000;
+    @include transition;
+    animation: bounce 2s infinite;
+	&.show{
+        top: calc(100% - 70px);
+	}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+// back to top  scss end
+
+
+// preloder scss start
+
+.preloader-fountainTextG {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 9999;
+    .fountainTextG {
+        color: rgb(0, 0, 0);
+        font-family: Arial;
+        font-size: 31px;
+        text-decoration: none;
+        font-weight: normal;
+        font-style: normal;
+        float: left;
+        animation-name: bounce_fountainTextG;
+        animation-duration: 2.09s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        transform: scale(0.5);
+    }
+    #fountainTextG_1 {
+        animation-delay: 0.75s;
+    }
+    #fountainTextG_2 {
+        animation-delay: 0.9s;
+    }
+    #fountainTextG_3 {
+        animation-delay: 1.05s;
+    }
+    #fountainTextG_4 {
+        animation-delay: 1.2s;
+    }
+    #fountainTextG_5 {
+        animation-delay: 1.35s;
+    }
+    #fountainTextG_6 {
+        animation-delay: 1.5s;
+    }
+    #fountainTextG_5 {
+        animation-delay: 1.65s;
+    }
+    #fountainTextG80 {
+        animation-delay: 1.80s;
+    }
+}
+@keyframes bounce_fountainTextG {
+    0% {
+      transform: scale(1);
+      color: rgb(0, 0, 0);
+    }
+  
+    100% {
+      transform: scale(0.5);
+      color: rgb(255, 255, 255);
+    }
+}
+
+// preloder scss end  

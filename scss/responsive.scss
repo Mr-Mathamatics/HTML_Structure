@@ -1,0 +1,115 @@
+/*-------------------------------------
+    
+	Author: Webstrot
+	Copyright © 2022-23
+
+---------------------------------------*/
+
+
+
+@mixin for-1900 {
+	@media (max-width: 1900px) {
+		@content;
+	}
+}
+@mixin for-1850px {
+	@media (max-width: 1850px) {
+		@content;
+	}
+}
+@mixin for-1650px {
+	@media (max-width: 1650px) {
+		@content;
+	}
+}
+@mixin for-1555px {
+	@media (max-width: 1555px) {
+		@content;
+	}
+}
+@mixin for-1440px {
+	@media (min-width: 1440px) {
+		@content;
+	}
+}
+@mixin for-1366 {
+	@media (max-width: 1366px) {
+		@content;
+	}
+}
+
+@mixin for-991 {
+	@media (max-width: 991px) {
+		@content;
+	}
+}
+@mixin for-767 {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+@mixin for-640 {
+	@media (max-width: 640px) {
+		@content;
+	}
+}
+@mixin for-580 {
+	@media (max-width: 580px) {
+		@content;
+	}
+}
+@mixin for-576 {
+	@media (max-width: 576px) {
+		@content;
+	}
+}
+@mixin for-480 {
+	@media (max-width: 480px) {
+		@content;
+	}
+}
+
+@mixin for-410 {
+	@media (max-width: 410px) {
+		@content;
+	}
+}
+
+@mixin for-380 {
+	@media (max-width: 380px) {
+		@content;
+	}
+}
+
+
+@mixin for-320 {
+	@media (max-width: 320px) {
+		@content;
+	}
+}
+
+
+/* ....................................
+1. Responsive Common CSS 
+.......................................*/
+@import 'common/responsive';
+
+/* ....................................
+2. Responsive header CSS 
+.......................................*/
+ @import 'header/responsive';
+
+/* ....................................
+3. Responsive footer CSS 
+.......................................*/
+@import 'footer/responsive';
+
+/* ....................................
+4. Responsive home CSS 
+.......................................*/
+@import 'home/responsive';
+
+/* ....................................
+5. Responsive slider CSS 
+.......................................*/
+@import 'slider/responsive';

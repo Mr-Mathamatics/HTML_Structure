@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": ";AAAA;;;;;yCAKyC;AAsFzC;;yCAEyC;AAGzC;;yCAEyC;AAGzC;;yCAEyC;AAGzC;;yCAEyC;AAGzC;;yCAEyC",
+    "sources": [
+        "../scss/responsive.scss",
+        "../scss/common/_responsive.scss",
+        "../scss/header/_responsive.scss",
+        "../scss/footer/_responsive.scss",
+        "../scss/home/_responsive.scss",
+        "../scss/slider/_responsive.scss"
+    ],
+    "names": [],
+    "file": "responsive.css"
+}
